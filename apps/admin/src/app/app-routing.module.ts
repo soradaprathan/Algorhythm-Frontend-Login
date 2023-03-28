@@ -11,7 +11,7 @@ import { ProductsListComponent } from './pages/products/products-list/products-l
 import { UsersFormComponent } from './pages/users/users-form/users-form.component';
 import { UsersListComponent } from './pages/users/users-list/users-list.component';
 import { ShellComponent } from './shared/shell/shell.component';
-
+import { LoginComponent } from '../../../../libs/users/src/lib/pages/login/login.component'
 const routes: Routes = [
     {
       path: '',
@@ -67,6 +67,10 @@ const routes: Routes = [
          component: OrdersDetailComponent
        }
       ]
+    },
+    {
+      path: 'login',
+      component: LoginComponent
     },
     {
         path: '**',
